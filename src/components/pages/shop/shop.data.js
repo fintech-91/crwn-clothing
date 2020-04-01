@@ -1,6 +1,3 @@
-
-import collPath from './images/shop-img/hats/brown-brim.png';
-
 const SHOP_DATA = [
     {
       id: 1,
