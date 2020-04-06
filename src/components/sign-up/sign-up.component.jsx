@@ -6,7 +6,7 @@ import CustomButton from '../custom-button/custom-button.component';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 import './sign-up.styles.scss';
-import SignIn from '../pages/sign-in/sign-in.component';
+//import SignIn from '../pages/sign-in/sign-in.component';
 
 class SignUp extends React.Component
 {
@@ -25,7 +25,7 @@ class SignUp extends React.Component
         event.preventDefault();
         const {displayName, email, password, confirmPassword } = this.state;
 
-        if(password != confirmPassword){
+        if(password !== confirmPassword){
             alert("Password don't match");
             return;
         }
